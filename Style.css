@@ -1,113 +1,66 @@
 
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 0.938cm;
-}
-
-.column {
-    margin-left: -0.938cm;
-    margin-right: -0.938cm;
-}
-
-.column .row {
-    padding: 0.938cm;
-}
-
-.flexwrapp {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flexitem {
-    display: flex;
-    align-items: center;
-}
-
-.flexcol {
-    display: flex;
-    flex-direction: column;
-    gap: 1cm;
-}
-
-.flexcenter {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+  
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.flexbetween {
+    min-height: 100vh;
+    transition: all 0.2s ease;
+    background-color: aqua;
+  }
+  
+  .container{
+    background-color: #fff;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-.main-links a:hover {
-    color: var(--secondary-color);
-}
-
-.secondary-links a:hover {
-    color: var(--light-text-color);
-}
-
-.icon-small, .icon-larger {
-    display: flex;
-    align-items: center;
-    padding: 0 0.25em;
-    font-weight: normal;
-}
-
-.icon-small {
-    font-size: 1.25em;
-    margin: auto;
-}
-
-.icon-larger {
-    font-size: 1.75em;
-    padding: 0 0.25em 0 0.5em;
-}
-
-header li > a {
-    display: flex;
+  }
+  
+  .light{
+    background-color: #000;
+    border-radius: 100%;
     position: relative;
-    line-height: inherit;
-    transition: var(--trans-color);
-}
-
-.header-top .wrapper {
-    font-size: var(--font-small);
-    font-weight: var(--fw3);
-    justify-content: space-between;
-    line-height: 42px;
-}
-
-.header-top .wrapper ul {
-    gap: 2em;
-}
-
-.header-top li {
-    position: relative;
-}
-
-.header-top ul ul {
-    position: absolute;
-    left: -1em;
-    line-height: 2em;
-    background: var(--white-color);
-    border: 1px solid var(--border-color);
-    z-index: 1;
-    display: none;
-}
-
-.header-top .right ul ul li a {
-    padding: 0.25em 1em;
-}
-
-.header-top .right ul ul li.current {
-    background: var(--border-color);
-}
-
-.header-top li:hover ul {
-    display: block;
-}
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: all 0.2s ease;
+    margin: 0.5rem;
+  }
+  
+  .light.active{
+    background-color: var(--light-color);
+    box-shadow: 0px 0px 20px 5px var(--light-color);
+  }
+  
+  .light.Light1{
+    --light-color:#00FFFC;
+  }
+  
+  .light.Light2 {
+    --light-color: #FC00FF;
+  }
+  
+  .light.Light3 {
+    --light-color: #fffc00;
+  }
+  
+  .light.Light4 {
+    --light-color: green;
+  }
+  
+  .light.Light5 {
+    --light-color: orange;
+  }
+  
+  .light.Light6 {
+    --light-color: purple;
+  }
+  
